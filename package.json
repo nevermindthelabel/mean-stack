@@ -1,0 +1,20 @@
+{
+  "name": "mean-stack",
+  "version": "1.0.0",
+  "description": "mean stack practice app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevermindthelabel/mean-stack.git"
+  },
+  "keywords": [],
+  "author": "Matt Kilcup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nevermindthelabel/mean-stack/issues"
+  },
+  "homepage": "https://github.com/nevermindthelabel/mean-stack#readme"
+}
