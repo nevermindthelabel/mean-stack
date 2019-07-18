@@ -1,0 +1,8 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+
+textarea {
+  background-color: rgba(29.4, 0, 51, .1)
+}
