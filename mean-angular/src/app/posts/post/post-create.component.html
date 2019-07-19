@@ -1,5 +1,19 @@
-<textarea name="" id="" cols="30" rows="10" [defaultValue]="newPost" #userInput [(ngModel)]="userTextInput" ></textarea>
-<hr />
-<button (click)='onAddPost()'>Save Post</button>
-<p>{{ userInput.value }}</p>
-<p>{{ newPost }}</p>
+<mat-card>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)] = "userTitleInput">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea
+      matInput
+      name=""
+      id=""
+      cols="30"
+      rows="10"
+      #userInput
+      [(ngModel)]="userTextInput"
+    ></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onAddPost()">
+    Save Post
+  </button>
+</mat-card>
