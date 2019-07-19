@@ -1,19 +1,20 @@
 <mat-card>
-  <mat-form-field>
-    <input matInput type="text" [(ngModel)] = "userTitleInput">
-  </mat-form-field>
-  <mat-form-field>
-    <textarea
-      matInput
-      name=""
-      id=""
-      cols="30"
-      rows="10"
-      #userInput
-      [(ngModel)]="userTextInput"
-    ></textarea>
-  </mat-form-field>
-  <button mat-raised-button color="primary" (click)="onAddPost()">
-    Save Post
-  </button>
+  <form (submit)="onAddPost()">
+    <mat-form-field>
+      <input matInput name="title" type="text" ngModel/>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        name="content"
+        cols="30"
+        rows="5"
+        #userInput
+        ngModel
+      ></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">
+      Save Post
+    </button>
+  </form>
 </mat-card>
